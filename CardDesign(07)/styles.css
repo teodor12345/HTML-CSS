@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Dosis', sans-serif;
+    background: whitesmoke ;
+    text-align:start;
+  }
+  
+  .cardtext {
+      position: relative;
+      color: black;
+  }
+  
+  /*** CARDS ***/
+  .cards-container {
+      float:left;
+    max-width: 100%;
+    margin: 1rem auto;
+    margin-top: 180px;
+  }
+  
+  .card {
+      position: absolute;
+      margin-top: 280px;
+      float: left;
+ margin: -3.9rem 0.5rem;
+  }
+
+  .card-one {
+      margin-top: 90px;
+    left: 170px;
+    position: relative;
+    width: 290px;
+    height: 290px;
+    background: #fff;
+    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
+  }
+  .card-one header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color:rgb(50, 92, 109);
+  }
+  .card-one header::before, .card-one header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+  }
+  .card-one header::before {
+    -webkit-transform: skewY(-8deg);
+    transform: skewY(-8deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  .card-one header::after {
+    -webkit-transform: skewY(8deg);
+    transform: skewY(8deg);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .card-one header .avatar {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -50px;
+    z-index: 5;
+    width: 110px;
+    height: 110px;
+    border-radius: 90%;
+    overflow: hidden;
+    background: #ccc;
+    border: 3px solid #fff;
+  }
+  .card-one header .avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+  }
+  .card-one h3 {
+    position: relative;
+    margin: 80px 0 30px;
+    text-align: center;
+  }
+  .card-one h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 1px;
+    background: #000;
+  }
+  .card-one .desc {
+    padding: 0 1rem 2rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #777;
+  }
+   
+
+  .content-padding {
+    padding: 3% 10%;
+}
+
+/* Header  */
+
+header {
+    background-color:whitesmoke;
+    position: absolute;
+    height: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    display:inline-flex;
+    align-items: center;
+    color: #404f54;
+    justify-content: space-between;
+}
+
+header>div>nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+header>div>nav>ul a {
+    color: #404f54;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+header>div>nav>ul li {
+    padding:20px;    
+}
+  /* Greeting text */
+.text {
+    margin-top: -60px;
+    margin-left: 190px;
+    
+}
+
+.text2 {
+    margin-top: -10px;
+    margin-left: 190px;
+}
+
+.text3 {
+    margin-left: 1090px;
+    position: absolute;
+}
+
+
+  /* Dropdown */
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dd-button {
+    margin-left: -40px;
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px 30px 10px 20px;
+    background-color: rgb(50, 92, 109);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+  }
+  
+  .dd-button:hover {
+    background-color: #eeeeee;
+  }
+  
+  
+  .dd-input {
+    display: none;
+  }
+  
+  .dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+  }
+  
+  .dd-input + .dd-menu {
+    display: none;
+  } 
+  
+  .dd-input:checked + .dd-menu {
+    display: block;
+  } 
+  
+  .dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-menu li:hover {
+    background-color: #f6f6f6;
+  }
+  
+  .dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+  
+  .dd-menu li.divider{
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }
+
+/* Next Prev Buttons */
+.buttonprev{
+position: relative; 
+margin-left: 230px;
+bottom: -70px;
+}
+
+.buttonnext{
+ 
+  position: relative;
+  margin-left: 990px;
+  bottom: -70px;
+}
+/* Footer */
+  @import url(https://fonts.googleapis.com/css?family=Raleway);
+  /* Colors */
+  footer {
+    background-color: darkgrey;
+    padding-bottom: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -650px;
+    width: 100%;
+    height: 10%;
+}
+  
+  footer {
+    width: 100%;
+    display: inline-block;
+    margin: 0em 0;
+    height: 70px;
+    background-color: #999;
+  }
+  footer .copyright {
+    width: 50%;
+    float: left;
+  }
+  @media (max-width: 600px) {
+    footer .copyright {
+      width: 100%;
+    }
+  }
+  footer .copyright p {
+    padding-left: 10%;
+    color: white;
+    font-size: 0.7em;
+    line-height: 70px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 600px) {
+    footer .copyright p {
+      text-align: center;
+      padding: 0;
+    }
+  }
+  footer .social {
+    width: 50%;
+    float: right;
+  }
+  @media (max-width: 600px) {
+    footer .social {
+      width: 100%;
+    }
+  }
+  footer .social a {
+    float: left;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    -moz-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+  }
+  footer .social a:hover {
+    background-color: #222;
+    -moz-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+  }
+  
+  .linked {
+    background-color: #1E83AE;
+    font-size: 1.2em;
+    width: 20%;
+  }
+  
+  .face {
+    background-color: #3D5B94;
+    font-size: 1.2em;
+    width: 20%;
+  }
+  
+  .tweet {
+    background-color: #3DACDD;
+    font-size: 1.2em;
+    width: 20%;
+  }
+  
+  .support {
+    background-color: #6dcd9a;
+    font-size: 0.8em;
+    width: 40%;
+  }

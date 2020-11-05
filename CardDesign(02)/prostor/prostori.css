@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./home_page_bez_slika.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+/* Nav-bar */
+header {
+    background-color: #AA1A75;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 7%;
+    
+}
+
+
+
+
+.row {
+  position: relative;
+    width: 90%;
+    max-width: 1100px;
+    margin: 170px auto 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  article { 
+    height: 350px;
+    overflow: hidden;
+    width: 30%;
+    color: white;
+    background-color: #73C8D0;
+  }
+  
+  article:hover{
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.9);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.9);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.9);
+    cursor: pointer;
+  }
+  
+  .featured-image {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRydlQmuTqBZIng5UwGU-8LuUf_JpyMM8uwi2gzbSxcag9yT0&usqp=CAU');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 295px;
+    -webkit-transition: all .75s;
+    transition: all .75s;
+  }
+  
+  .featured-image:hover {
+    height: 200px;
+  }
+  
+  .content {
+    position: flex;
+    padding: 10 12px;
+  }
+  
+  .content h1 {
+    font-size: 20px;
+    font-weight: 30;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    letter-spacing: 3px;
+  }
+  
+  .content p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .filter {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s;
+    transistion: all 0.5s;
+  }
+  
+  .filter:hover {
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .read-more {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    -webkit-transition-delay: .6s;
+    transition-delay: .6s;
+  }
+  
+  .read-more:hover {
+    opacity: 100;
+  }
+  
+  .read-more a {
+    color: white;
+    padding: 15px 30px;
+    border: white 2px solid;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background-color: #73C8D0;
+  }
+  
+  .read-more a:hover {
+    background: #4da3b4;
+    color: black;
+  }
+  
+  #title {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 6px 6px rgba(0,0,0,0.75);
+  }
+  
+  
+  
+  
+  
+  
+.logo-top-left {
+    width: 200px;
+    height: 80px;
+    margin-left: 10%;
+}
+.logo-top-left-image {
+    width: 100px;
+    height: auto;
+}
+
+
+ /* NAV-LINKS */
+nav {
+    flex: 1;
+}
+.nav-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style-type: none;  
+    justify-content: space-evenly;
+}
+
+.nav-link1 {
+    padding: 40px;
+    margin-left: 600px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link1:hover {
+    color: #4da3b4;
+}
+
+.nav-link2 {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link2:hover {
+    color: #4da3b4;
+}
+
+
+.pagination{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.pagination a{
+  background-color: #73C8D0;
+  color: white;
+}
+
+.page-link{
+  border-radius: 10px;
+}
+
+.paging-numbers {
+  position: relative;
+  display: inline-flex;
+  list-style: none;
+}
+
+
+.footer{
+    margin-top: 150px;
+    border:white;
+    background-image: url("./footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.footer-text-follow-us {
+    top: 100px;
+    position: relative;
+    font-size: 19px;
+    color: white;
+    margin-left: 10%;         
+     
+  }
+  
+.logo-footer-text-1 > p { 
+    position: relative;
+    top: 110px;   
+    margin-left: 82%;
+    font-size: 20px;  
+    color:white;
+  }
+
+.logo-footer-text-1 img{
+    position: relative;
+     top: 140px;
+    height: 50px;  
+    color: #4DA3B4;
+    background-color: #4DA3B4;
+    border-radius: 50%;
+  }
+ 
+.instagram{
+    margin-left:10%;
+}
+
+.footer-text-2 {
+    position: relative;
+    top: 130px;
+    margin-left: 73%; 
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+

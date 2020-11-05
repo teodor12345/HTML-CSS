@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: DINPro-Bold ;
+    width: 100%;
+    height: 120vh;
+    background-image: url("./home_page_bez_slika.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+/* Nav-bar */
+header {
+    background-color: #AA1A75;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 7%;
+    
+}
+.logo-top-left {
+    width: 200px;
+    height: 80px;
+    margin-left: 10%;
+}
+.logo-top-left-image {
+    width: 100px;
+    height: auto;
+}
+
+
+ /* NAV-LINKS */
+nav {
+    flex: 1;
+}
+.nav-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style-type: none;  
+    justify-content: space-evenly;
+}
+
+.nav-link1 {
+    padding: 40px;
+    margin-left: 600px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link1:hover {
+    color: #4da3b4;
+}
+
+.nav-link2 {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link2:hover {
+    color: #4da3b4;
+}
+
+
+
+
+.card {
+    width: 20%;
+    transition: 0.3s;
+    background-color: #4DA3B4;
+    position: relative;
+    left:150px;
+    top: 90px;
+    display: inline-block;
+    margin: 3rem;
+  }
+  .card:hover {
+      box-shadow: 0 16px 36px 0 rgba(0,0,0,0.7);
+     transform: translate(0,-5px);
+  }
+  .container {
+    padding: 10px 10px;
+    text-align: left;
+    color: #fff;
+  }
+  .category {
+    text-decoration: none;
+    color: #AA1A75;
+    font-weight: bold;
+    font-size: 0.85em;
+  }
+  .category:hover {
+    text-decoration: underline;
+  }
+  h2 {
+    margin: 0;
+    margin-top: 2px;
+  }
+  .author{
+    text-decoration: none;
+    color:#AA1A75;
+  }
+  p {
+    margin-top: 7px;
+  }
+  .author:hover {
+    text-decoration: underline;
+  }
+  @media only screen and (max-width: 1024px){
+      .card {
+          width: 40%;
+      }
+  }
+  @media only screen   and (min-device-width: 320px) 
+    and (max-device-width: 550px) {
+      .card {
+          width: 98%;
+        margin: 1%;
+      }
+  }
+
+
+.footer{
+    margin-top: 250px;
+    border:white;
+    background-image: url("./footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.footer-text-follow-us {
+    top: 100px;
+    position: relative;
+    font-size: 19px;
+    color: white;
+    margin-left: 10%;         
+     
+  }
+  
+.logo-footer-text-1 > p { 
+    position: relative;
+    top: 110px;   
+    margin-left: 82%;
+    font-size: 20px;  
+    color:white;
+  }
+
+.logo-footer-text-1 img{
+    position: relative;
+     top: 140px;
+    height: 50px;  
+    color: #4DA3B4;
+    background-color: #4DA3B4;
+    border-radius: 50%;
+  }
+ 
+.instagram{
+    margin-left:10%;
+}
+
+.footer-text-2 {
+    position: relative;
+    top: 130px;
+    margin-left: 73%; 
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+

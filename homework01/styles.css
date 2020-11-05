@@ -1,0 +1,105 @@
+.News{
+    font-family: 'Electrolize', sans-serif;
+    font-size: 25px;
+    
+
+}
+
+.Breaking-news{
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 30px;
+    
+}
+
+.Favorite-news{
+    font-family: 'Damion', cursive;
+    font-size: 25px;
+
+}
+
+
+.Old-news{
+    font-family: 'Mansalva', cursive;
+    font-size: 25px;
+
+}
+
+
+h1,h2,h3,h4{
+    text-shadow:2px 2px 4px red;
+    text-align: center;
+    font-size: 30px;
+}
+
+.purplecolor{
+    background:palevioletred;
+}
+.pinkcolor{
+    background: pink;
+}
+
+.greencolor{
+    background:lightgreen;
+}
+
+.bluecolor{
+    background:lightskyblue;
+}
+
+.News::first-line{
+    color: lightsalmon;
+    font-weight: 400px;
+}
+
+.Favorite-news::first-line{
+    font-weight: 300px;
+    color: blue;
+}
+
+.Old-news::first-line{
+    font-weight: 500px;
+    color: red;
+}
+
+.Breaking-news::first-line{
+    font-weight: 100px;
+    color: green;
+}
+
+.Old-news::first-letter{
+    color: green;
+}
+
+.News::first-letter{
+    color:blue
+}
+
+.Favorite-news::first-letter{
+    color:purple
+}
+
+.Breaking-news::first-letter{
+    color:darkred;
+}
+
+a:link {
+  color: red;
+  font-size: 30px;
+}
+
+
+a:visited {
+  color:lightslategrey;
+}
+
+
+a:hover {
+  color: hotpink;
+}
+
+
+a:active {
+  color: blue;
+}
+
+

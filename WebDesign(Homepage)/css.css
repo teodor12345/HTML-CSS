@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+
+body {
+  width: 100%;
+  height: 100%;
+}
+.page-wrapper {
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  background:linear-gradient(#c2d4dd, #FDEB82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 15px;
+  width: 1400px;
+  height: 650px;
+  display: flex;
+  box-shadow: 0 0 50px 0 rgba(0,0,0,0.10);
+  margin:16px 16px;
+}
+
+.left-box {
+  margin-top: 110px;
+  margin-left:-55px;
+  padding: 32px 62px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+input {
+  padding: 16px 16px;
+  margin: 16px 16px;
+  border-width: thin;
+  border-color: #E0E3E5;
+  border-style: solid;
+  border-radius: 9px;
+}
+
+.searchbutton {
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  padding: 16px 16px;
+  margin: 16px 16px;
+  background-color: #80ced6;
+  border-radius: 6px;
+  border: none;
+}
+
+
+.searchbutton:hover {
+  filter: brightness(55%);
+}
+
+.right-box {
+  position: unset;
+  flex: 1.5;
+  background-image: url('https://i.pinimg.com/originals/8c/35/29/8c35299c8bb262d66e968a16cf899a30.jpg');
+  background-size: cover;
+  border-radius: 0 6px 6px 0;
+}
+
+.logo {
+  width: 90px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 40px;
+  border-radius: 6px;
+}
+
+.login {
+  position: absolute;
+  cursor: pointer;
+  color:#80ced6;
+  text-transform: uppercase;
+  padding: 7px 7px;
+  margin: 10px 10px;
+  background-color: transparent;
+  border-radius:10px;
+  border: none;
+  margin-left: 500px;
+  margin-top: 45px;
+  font-size: 17px;
+}
+
+.signup{
+
+position: absolute;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  padding: 7px 7px;
+  margin: 1px 1px;
+  background-color: #80ced6;
+  border-radius:10px;
+  margin-left: 600px;
+  margin-top: 45px;
+  border: none;
+  font-size: 17px;
+}
+
+.login:hover {
+  filter: brightness(55%);
+}
+.signup:hover {
+  filter: brightness(85%);
+}
+
+.menu {
+  position: fixed;
+  text-decoration: none;
+  margin-top: -130px;
+  margin-left: 380px;
+}
+
+
+/* Navbar links */
+.menu a {
+  float: left;
+  color: #80ced6;
+  text-align-last: initial;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}

@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family:'Open Sans', sans-serif;
+}
+
+.content-padding {
+    padding: 0 15%;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    height: 76px;
+    left: 0;
+    right: 0;
+    top: 0;
+    display:inline-flex;
+    align-items: center;
+    color: #404f54;
+    justify-content: space-between;
+}
+
+header>div>nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+header>div>nav>ul a {
+    color: #404f54;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+header>div>nav>ul li {
+    padding:10px;    
+}
+.btn-header {
+    width: 156px;
+  height: 38px;
+  opacity: 0.4;
+  border-radius: 19px;
+  border: solid 2px #404f54;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.login {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #404f54;
+    padding: 30px ;
+    display: flex;
+    list-style: none;
+
+}
+
+.row {
+    width: 100vh;
+    display: flex;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.main-top {
+    height: calc(100vh - 66px);
+    margin-top: 86px;
+    background: url('./assets/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-top img {
+    width: 100vh;
+}
+
+.heading-row-one {
+    width: 1000px;
+    height: 120px;
+    font-family: 'Merriweather', serif;
+    font-size: 52px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #404f54;
+    padding-top: 40px;
+}
+
+.heading-row-two {
+    width: auto;
+    height: 21px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align:center;
+    color: #404f54;
+}
+
+
